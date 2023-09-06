@@ -1,0 +1,8 @@
+[rewrite_local]
+# 豆瓣开屏去广告
+^https:\/\/api\.douban\.com\/v2\/app_ads\/splash_bid$ url reject
+^https:\/\/api\.douban\.com\/v2\/app_ads\/splash_show$ url reject
+^https:\/\/api\.douban\.com\/v2\/app_ads\/splash_preload$ url reject
+
+[mitm]
+hostname = api.douban.com

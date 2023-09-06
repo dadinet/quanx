@@ -1,0 +1,17 @@
+[rewrite_local]
+
+# 酷狗开屏
+^http:\/\/ads\.service\.kugou\.com\/v2\/mobile_splash_sort\?.*$ url reject
+
+^http:\/\/ads\.service\.kugou\.com\/v4\/mobile_splash_sort\?.*$ url reject
+
+
+# 酷狗听书广告
+^https:\/\/ii\.gdt\.qq\.com\/gdt_inner_view\?.*$ url reject
+
+^https:\/\/us\.l\.qq\.com\/exapp\?.*$ url reject
+
+
+[mitm]
+
+hostname = ads.service.kugou.com ,*.qq.com
